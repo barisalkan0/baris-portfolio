@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Alkan;Barış;;;
+FN:Barış Alkan
+TITLE:Computer Engineering Student · AI & Computer Vision
+ORG:METU Northern Cyprus Campus
+EMAIL;TYPE=INTERNET,PREF:alkan.baris@metu.edu.tr
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/barislkn
+URL;TYPE=GitHub:https://github.com/barisalkan0
+NOTE:Open to internships in AI, computer vision and autonomous systems.
+END:VCARD

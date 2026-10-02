@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #020617;
+  color: #cbd5e1;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Binary rain beside the hero: each column holds its digits twice and slides one copy-height for a seamless loop. */
+@keyframes rain-fall {
+  from {
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rain-column {
+  animation: rain-fall linear infinite;
+  will-change: transform;
+}
+
+/* "Open to internships" dot: two rings keep pulsing outwards like a radar/sonar ping. */
+@keyframes radar-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(3.4);
+    opacity: 0;
+  }
+}
+
+.radar-dot {
+  position: relative;
+  display: inline-flex;
+  height: 0.5rem;
+  width: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.9);
+}
+
+.radar-dot::before,
+.radar-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 1.5px solid rgba(52, 211, 153, 0.9);
+  animation: radar-ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.radar-dot::after {
+  animation-delay: 1.2s;
+}
+
+/* Route line on the GIS card keeps "driving". */
+@keyframes map-dash {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+
+/* "Get it on Google Play" button: Google-coloured border that keeps rotating, plus a soft pulse. */
+@property --play-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes play-spin {
+  to {
+    --play-angle: 360deg;
+  }
+}
+
+@keyframes play-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.45), 0 10px 30px -10px rgba(66, 133, 244, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(52, 168, 83, 0), 0 10px 40px -8px rgba(251, 188, 4, 0.55);
+  }
+}
+
+.play-cta {
+  position: relative;
+  border-radius: 1rem;
+  padding: 2px;
+  background: conic-gradient(from var(--play-angle), #34a853, #fbbc04, #ea4335, #4285f4, #34a853);
+  animation: play-spin 3.2s linear infinite, play-pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .rain-column,
+  .radar-dot::before,
+  .radar-dot::after,
+  .play-cta {
+    animation: none;
+  }
+}
