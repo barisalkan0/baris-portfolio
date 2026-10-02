@@ -4,7 +4,15 @@
 // Runs before `npm run dev` and `npm run build`; only re-encodes when the source changed.
 import { readdir, stat } from "node:fs/promises";
 import path from "node:path";
-import sharp from "sharp";
+
+// sharp is a native module; if it is missing on some machine/CI, skip quietly (the committed .webp files are used).
+let sharp;
+try {
+  sharp = (await import("sharp")).default;
+} catch {
+  console.log("sharp not available, skipping image optimization");
+  process.exit(0);
+}
 
 const ROOT = path.resolve("src/assets");
 const MIN_BYTES = 150 * 1024; // smaller files are left alone

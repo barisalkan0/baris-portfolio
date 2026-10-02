@@ -1,6 +1,8 @@
-# Barış Alkan — Portfolio
+# Barış Alkan portfolio
 
 Personal portfolio (React 19 · Vite · Tailwind CSS 4 · framer-motion). One page, English, mobile-first.
+
+**Canlı site:** https://barisalkan0.github.io (`main`'e her push'ta otomatik yayınlanır, 1-2 dakika sürer).
 
 ```bash
 npm install
@@ -51,7 +53,7 @@ npm run og       # link önizleme görselini (public/og.png) yeniden üretir
 
 Güncel CV'yi **`public/Baris_Alkan_CV.pdf`** adıyla koy (tam bu isim). Nav'daki "Resume", hero'daki "View Resume" ve iletişimdeki "Resume" butonları bu dosyayı yeni sekmede açar.
 
-## Görseller — dosyayı bırak, otomatik görünür
+## Görseller: dosyayı bırak, otomatik görünür
 
 `src/assets/` altına doğru isimle bir görsel koyduğunda kod değişikliği gerekmez (`.jpg`, `.png`, `.webp` olabilir).
 
@@ -66,13 +68,12 @@ Güncel CV'yi **`public/Baris_Alkan_CV.pdf`** adıyla koy (tam bu isim). Nav'dak
 | `src/assets/projects/rag-assistant.png` | Local RAG Assistant kartı (terminal çizimi yerine geçer) | Web arayüzünün ekran görüntüsü, 16:9. |
 | `src/assets/projects/cifar10.png` | CIFAR-10 kartı (metrik çizimi yerine geçer) | Eğitim grafiği / confusion matrix, 16:9. |
 
-## Yayına alma (Vercel)
+## Yayına alma
 
-1. Repo GitHub'da: `barisalkan0/baris-portfolio`.
-2. vercel.com → *Add New Project* → repoyu seç → Framework: **Vite** → Deploy.
-3. Çıkan adresi (ör. `https://barisalkan.vercel.app`) `.env` dosyasındaki `VITE_SITE_URL=` satırına yaz ve tekrar deploy et.
-   Bu adres QR kodunu (nav'daki QR butonu + iletişim bölümü), paylaş butonunu ve link önizlemesini (`og.png`) etkinleştirir.
-4. `public/baris-alkan.vcf` dosyasına da `URL:<site adresi>` satırı ekle.
+Otomatik: `main` branch'ine her push'ta GitHub Actions (`.github/workflows/deploy.yml`) siteyi derler ve `barisalkan0/barisalkan0.github.io` reposuna yayınlar. Elle tetiklemek için GitHub'da *Actions → Deploy to barisalkan0.github.io → Run workflow*.
+
+- `public/app-ads.txt` dosyasını **silme**: Quadra Rotate'in Google Play'deki geliştirici sitesi bu adres ve AdMob bu dosyayı kökten okuyor.
+- Site adresi `.env` içindeki `VITE_SITE_URL` (QR kodu, paylaş butonu, link önizlemesi bunu kullanır).
 
 ## Credits
 

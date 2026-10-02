@@ -1,0 +1,49 @@
+# Every push to main builds the site and publishes it to https://barisalkan0.github.io
+# (the barisalkan0/barisalkan0.github.io repo). PAGES_DEPLOY_KEY is a deploy key that can
+# only write to that one repo. public/app-ads.txt (AdMob for Quadra Rotate) ships with every deploy.
+name: Deploy to barisalkan0.github.io
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      - run: npm run build
+
+      - name: Prepare static output
+        run: |
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+          test -f dist/app-ads.txt
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          external_repository: barisalkan0/barisalkan0.github.io
+          publish_branch: main
+          publish_dir: ./dist
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          full_commit_message: "Deploy portfolio from barisalkan0/baris-portfolio@${{ github.sha }}"

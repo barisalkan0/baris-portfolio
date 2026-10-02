@@ -4,6 +4,8 @@ Personal portfolio for Barış Alkan (Computer Engineering, Middle East Technica
 Main use: shown on a phone to company representatives (aerospace, defense, tech) at IAC 2026, Antalya, 5–9 Oct 2026.
 A visitor gives it ~10 seconds, so the first mobile screen has to sell him.
 
+Live site: **https://barisalkan0.github.io**. Every push to `main` deploys automatically (`.github/workflows/deploy.yml` builds, lints and publishes to the `barisalkan0/barisalkan0.github.io` repo; takes ~1–2 minutes). Check progress with `gh run list -R barisalkan0/baris-portfolio`.
+
 Two people work on this repo from different computers: **Barış** and **Derin**. Talk to them in **Turkish**.
 
 ## Commands
@@ -29,6 +31,7 @@ Before saying something is done: `npm run lint` and `npm run build` must pass, a
 - `src/components/reactbits/`: adapted React Bits components (ProfileCard, BlurText, LogoLoop).
 - `src/components/effects/`: CursorTrail, MatrixRainSide, Backdrop. Switch on/off with `effects` in `profile.js`.
 - `public/`: favicon, og.png, apple-touch-icon, `baris-alkan.vcf` ("Save contact"), and the CV slot `Baris_Alkan_CV.pdf`.
+  - **`public/app-ads.txt` must never be removed or changed.** barisalkan0.github.io is the developer website of Quadra Rotate on Google Play and AdMob reads this file from the site root.
 - `docs/AI_MEMORY.md`: short architecture + decision log. Keep it current after significant changes.
 
 Page order: Hero → 01 Selected work (Quadra Rotate first) → 02 Experience → 03 About → 04 Education & Skills → 05 Contact.
@@ -48,9 +51,8 @@ Page order: Hero → 01 Selected work (Quadra Rotate first) → 02 Experience �
 
 ## Open tasks
 
-1. **CV**: put the updated PDF at `public/Baris_Alkan_CV.pdf`. Until then every Resume button 404s.
-2. **Deploy** before 5 Oct 2026 (Vercel: import the GitHub repo, framework Vite). Then set `VITE_SITE_URL` in `.env` (enables QR code, share button, og:url/og:image) and add a `URL:` line to `public/baris-alkan.vcf`.
-3. Optional photos: `src/assets/projects/teknofest-uav.jpg` (replaces the stock photo + detection overlay), `projects/rag-assistant.png`, `projects/cifar10.png`.
+1. **CV**: put the updated PDF at `public/Baris_Alkan_CV.pdf` and push. The Resume buttons are hidden until that file exists (`vite.config.js` checks at build time), then appear automatically.
+2. Optional photos: `src/assets/projects/teknofest-uav.jpg` (replaces the stock photo + detection overlay), `projects/rag-assistant.png`, `projects/cifar10.png`.
 
 ## Git workflow (two machines)
 

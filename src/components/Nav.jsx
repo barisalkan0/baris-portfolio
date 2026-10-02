@@ -81,13 +81,12 @@ export default function Nav({ onShowQr, sectionsReady }) {
             </button>
           )}
           <a
-            href={RESUME_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={RESUME_URL || "#contact"}
+            {...(RESUME_URL ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="inline-flex h-9 items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 text-sm font-medium text-cyan-100 transition hover:bg-cyan-300 hover:text-slate-950"
           >
-            <Icon name="file" className="h-4 w-4" />
-            Resume
+            <Icon name={RESUME_URL ? "file" : "mail"} className="h-4 w-4" />
+            {RESUME_URL ? "Resume" : "Contact"}
           </a>
           <button
             type="button"

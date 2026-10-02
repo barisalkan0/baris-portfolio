@@ -10,7 +10,8 @@
 // Set it in the .env file as VITE_SITE_URL; the QR code and share button use it.
 export const SITE_URL = (import.meta.env.VITE_SITE_URL || "").replace(/\/$/, "");
 
-export const RESUME_URL = "/Baris_Alkan_CV.pdf";
+// null until public/Baris_Alkan_CV.pdf exists (checked at build time in vite.config.js); Resume buttons hide meanwhile.
+export const RESUME_URL = import.meta.env.VITE_HAS_CV ? "/Baris_Alkan_CV.pdf" : null;
 export const VCARD_URL = "/baris-alkan.vcf";
 export const PLAY_URL = "https://play.google.com/store/apps/details?id=con.derbar.quadra";
 

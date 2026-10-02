@@ -56,6 +56,11 @@ function ProofChip({ proof }) {
   );
 }
 
+const primaryButton =
+  "inline-flex h-11 items-center gap-2 rounded-full bg-cyan-300 px-5 text-sm font-semibold text-slate-950 shadow-[0_0_32px_-8px_rgba(103,232,249,0.7)] transition hover:bg-cyan-200";
+const secondaryButton =
+  "inline-flex h-11 items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-5 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/[0.08]";
+
 const iconButton =
   "grid h-11 w-11 place-items-center rounded-full border border-white/12 bg-white/[0.04] text-slate-200 transition hover:border-cyan-300/40 hover:bg-white/[0.08] hover:text-white";
 
@@ -135,20 +140,13 @@ export default function Hero() {
           </motion.ul>
 
           <motion.div {...fadeUp(0.25)} className="mt-8 flex flex-wrap items-center gap-3">
-            <a
-              href={RESUME_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-11 items-center gap-2 rounded-full bg-cyan-300 px-5 text-sm font-semibold text-slate-950 shadow-[0_0_32px_-8px_rgba(103,232,249,0.7)] transition hover:bg-cyan-200"
-            >
-              <Icon name="file" className="h-4 w-4" />
-              View Resume
-            </a>
-            <a
-              href={VCARD_URL}
-              download="Baris-Alkan.vcf"
-              className="inline-flex h-11 items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-5 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/[0.08]"
-            >
+            {RESUME_URL && (
+              <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={primaryButton}>
+                <Icon name="file" className="h-4 w-4" />
+                View Resume
+              </a>
+            )}
+            <a href={VCARD_URL} download="Baris-Alkan.vcf" className={RESUME_URL ? secondaryButton : primaryButton}>
               <Icon name="userPlus" className="h-4 w-4" />
               Save contact
             </a>

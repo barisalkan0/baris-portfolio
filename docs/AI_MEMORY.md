@@ -25,7 +25,8 @@
 
 **Active work / next steps**
 - User to add: CV PDF, TEKNOFEST/team photo, project screenshots (profile photos added).
-- Deploy to Vercel before 5 Oct 2026, then set `VITE_SITE_URL` (enables QR/share/og URLs) and add URL to vCard.
+- Live at https://barisalkan0.github.io via GitHub Actions (push to main → build → peaceiris/actions-gh-pages with deploy key `PAGES_DEPLOY_KEY` → barisalkan0/barisalkan0.github.io main). `public/app-ads.txt` keeps Quadra's AdMob record at the root; never remove it.
+- Resume buttons hide until `public/Baris_Alkan_CV.pdf` exists (VITE_HAS_CV set in vite.config.js).
 
 **Constraints:** mobile-first (375px must show name, role, 3 proofs, résumé CTA on first screen); respect `prefers-reduced-motion`.
 

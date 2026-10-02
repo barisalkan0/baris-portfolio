@@ -133,7 +133,7 @@ export default function Contact() {
               </ContactRow>
               <ContactRow icon="linkedin" label="LinkedIn" value={`in/${person.linkedinHandle}`} href={person.linkedin} />
               <ContactRow icon="github" label="GitHub" value={person.githubHandle} href={person.github} />
-              <ContactRow icon="file" label="Resume" value="PDF · opens in a new tab" href={RESUME_URL} />
+              {RESUME_URL && <ContactRow icon="file" label="Resume" value="PDF · opens in a new tab" href={RESUME_URL} />}
               <ContactRow icon="userPlus" label="Save contact" value="Add me to your phone" href={VCARD_URL} download="Baris-Alkan.vcf" />
             </div>
 

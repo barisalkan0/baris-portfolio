@@ -3,3 +3,4 @@
 *.jpg binary
 *.webp binary
 *.pdf binary
+*.vcf text eol=crlf
