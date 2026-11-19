@@ -43,6 +43,8 @@ Page order: Hero → 01 Selected work (Quadra Rotate first) → 02 Experience �
 - Use the real company/organisation logos, never generic icons, for companies.
 - The CIFAR-10 CNN is a **personal project**. Never present it as related to the TEKNOFEST UAV work.
 - Write "Resume", not "Résumé".
+- Microsoft AI Innovators is a training program: write "Program Participant" / "AI Innovators Program", never "Intern".
+- Commits must not credit Claude (no Co-Authored-By lines).
 - Don't invent facts, titles or numbers. Use only what is in his CV/LinkedIn; ask when unsure. On LinkedIn both internships are titled just "Intern".
 - CGPA and ranking are hidden on purpose.
 - Plain text-only sections feel boring to him: give sections visuals (illustrations, logos, stats), but keep the overall look calm: dark slate + one cyan accent, subtle space hints only (horizon glow, grid). Not a full space theme.
@@ -51,7 +53,7 @@ Page order: Hero → 01 Selected work (Quadra Rotate first) → 02 Experience �
 
 ## Open tasks
 
-1. **CV**: put the updated PDF at `public/Baris_Alkan_CV.pdf` and push. The Resume buttons are hidden until that file exists (`vite.config.js` checks at build time), then appear automatically.
+1. CV is at `public/Baris_Alkan_CV.pdf`. Replace it with the same name when the CV changes.
 2. Optional photos: `src/assets/projects/teknofest-uav.jpg` (replaces the stock photo + detection overlay), `projects/rag-assistant.png`, `projects/cifar10.png`.
 
 ## Git workflow (two machines)

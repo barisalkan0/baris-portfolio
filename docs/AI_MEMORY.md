@@ -24,10 +24,12 @@
 **Images:** `scripts/optimize-images.mjs` (predev/prebuild, sharp devDependency) writes `.webp` twins for photos >150 KB; `asset()` prefers `.webp`.
 
 **Active work / next steps**
-- User to add: CV PDF, TEKNOFEST/team photo, project screenshots (profile photos added).
+- User to add: TEKNOFEST/team photo, project screenshots (profile photos and CV PDF added).
 - Live at https://barisalkan0.github.io via GitHub Actions (push to main → build → peaceiris/actions-gh-pages with deploy key `PAGES_DEPLOY_KEY` → barisalkan0/barisalkan0.github.io main). `public/app-ads.txt` keeps Quadra's AdMob record at the root; never remove it.
 - Resume buttons hide until `public/Baris_Alkan_CV.pdf` exists (VITE_HAS_CV set in vite.config.js).
 
 **Constraints:** mobile-first (375px must show name, role, 3 proofs, résumé CTA on first screen); respect `prefers-reduced-motion`.
 
 **Security risk level:** low — static site; no auth, payments, user data, forms or API keys. Not verified by audit beyond this review.
+
+**2026-11-19 update:** Goal changed from IAC 2026 internships to a part-time remote role in AI/software that continues during a master's (from 2027). Microsoft AI Innovators is a training program: shown as "Program Participant", never "Intern". Site copy, meta tags, vCard and og.png updated to match the CV; CV PDF added to `public/`. Quadra Rotate code link removed (repo is private).

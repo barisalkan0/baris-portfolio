@@ -177,7 +177,7 @@ export default function Hero() {
               name={person.name}
               title={person.cardTitle}
               handle={person.linkedinHandle}
-              status="Open to internships"
+              status={person.status}
               contactText="Contact"
               onContactClick={scrollToContact}
               showUserInfo

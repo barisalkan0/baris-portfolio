@@ -29,10 +29,10 @@ export const person = {
   university: "Middle East Technical University",
   campus: "NCC",
   school: "METU NCC",
-  status: "Open to internships",
-  statusDetail: "AI, computer vision & autonomous systems", // hidden on small phones
-  headline: "I build AI and computer-vision software that works in the real world: on UAVs, on-device and on the map.",
-  cardTitle: "Computer Vision · AI · Full-Stack",
+  status: "Open to remote roles",
+  statusDetail: "AI & software engineering, part time", // hidden on small phones
+  headline: "I build AI applications and the software around them: document assistants, image models and web platforms.",
+  cardTitle: "AI · Computer Vision · Web",
   email: "alkan.baris@metu.edu.tr",
   linkedin: "https://www.linkedin.com/in/barislkn",
   linkedinHandle: "barislkn",
@@ -46,24 +46,24 @@ export const person = {
 // suffixes (%, +) are kept. Keep them in sync with the CV.
 export const heroStats = [
   { value: "93.31%", label: "CIFAR-10 test accuracy" },
-  { value: "2", label: "internships, summer 2026" },
+  { value: "8,700+", label: "places mapped in Ankara" },
   { value: "40+", label: "students helped as TA" },
   { value: "1", label: "game live on Google Play" },
 ];
 
 // The three facts a visitor should remember after ten seconds.
 export const proofs = [
-  { logo: "microsoft", label: "Microsoft Türkiye", detail: "AI Innovators Intern · 2026", href: "#experience" },
+  { logo: "microsoft", label: "Microsoft Türkiye", detail: "AI Innovators Program · 2026", href: "#experience" },
   { logo: "teknofest", label: "TEKNOFEST Fighter UAV", detail: "Passed Technical Qualification", href: "#project-teknofest" },
-  { logo: "basarsoft", label: "Başarsoft", detail: "Full-Stack GIS Intern · 2026", href: "#experience" },
+  { logo: "basarsoft", label: "Başarsoft", detail: "Web GIS Intern · 2026", href: "#experience" },
 ];
 
 export const aboutTitle = "Real projects, measurable results.";
 
 export const about = [
   "I'm a fourth-year Computer Engineering student at **Middle East Technical University** (Northern Cyprus Campus). I like building software that leaves the classroom and gets used.",
-  "In summer 2026 I completed **two back-to-back internships**. At **Microsoft Türkiye's AI Innovators Program** I built a RAG assistant that runs **fully offline** on Microsoft Foundry Local. At **Başarsoft** I built a **full-stack web GIS platform** on .NET 8 and PostGIS, loaded with **8,700+ real places** in Ankara.",
-  "On our **TEKNOFEST Fighter UAV** team I develop the **YOLO-based target detection** and decision logic, and the team has **passed the technical qualification** stage. Separately, as a personal project, I trained a residual CNN that lifted CIFAR-10 accuracy from **78.43% to 93.31%**.",
+  "In summer 2026 I joined **Microsoft Türkiye's AI Innovators Program**, where I built a RAG assistant that runs **fully offline** on Microsoft Foundry Local. Right after, during my internship at **Başarsoft**, I built a **web GIS platform** on .NET 8 and PostGIS, loaded with **8,700+ real places** in Ankara.",
+  "On our **TEKNOFEST Fighter UAV** team I work on **YOLO target detection** and decision logic, and the team has **passed the technical qualification** stage. Separately, as a personal project, I trained a residual CNN that lifted CIFAR-10 accuracy from **78.43% to 93.31%**.",
   "I also shipped **Quadra Rotate** to Google Play and helped **40+ students** as a teaching assistant for Data Structures.",
 ];
 
@@ -76,7 +76,7 @@ export const focusAreas = [
     logos: [],
     stat: "93.31%",
     statLabel: "CIFAR-10 test accuracy · personal project",
-    lines: ["**Residual CNN in PyTorch:** up from 78.43%", "**TEKNOFEST UAV team (separate):** YOLO-based target detection"],
+    lines: ["**Residual CNN in PyTorch:** up from 78.43%", "**TEKNOFEST UAV team (separate):** YOLO target detection"],
   },
   {
     visual: "chat",
@@ -113,9 +113,9 @@ export const experience = [
   {
     date: "Aug – Sep 2026",
     logo: "basarsoft",
-    role: "Intern · Full-Stack Web GIS",
+    role: "Intern · Web GIS",
     org: "Başarsoft",
-    detail: "Developed a **full-stack web GIS platform** with .NET 8, PostGIS, GeoServer, React and OpenLayers.",
+    detail: "Developed a **web GIS platform** with .NET 8, PostGIS, GeoServer, React and OpenLayers.",
     points: [
       "Built the REST API with **JWT auth, role-based permissions** and spatial CRUD over PostGIS.",
       "Loaded **8,700+ real places** in Ankara from OpenStreetMap and built a location-analysis tool that ranks the best areas to live by weighted criteria.",
@@ -127,10 +127,10 @@ export const experience = [
   {
     date: "Jul – Aug 2026",
     logo: "microsoft",
-    role: "Intern · AI Innovators Internship Program",
+    role: "Program Participant · AI Innovators Program",
     org: "Microsoft Türkiye",
-    meta: "Remote · Certificate of Completion",
-    detail: "Selected for Microsoft Türkiye's **AI Innovators Internship Program** (Summer 2026).",
+    meta: "Remote · Training program · Certificate of Completion",
+    detail: "Selected for Microsoft Türkiye's **AI Innovators Program** (Summer 2026).",
     points: [
       "Built a **local RAG assistant** that answers questions from your own documents, running **fully offline** with Microsoft Foundry Local.",
       "Implemented the pipeline end to end: document chunking, embeddings, SQLite storage and relevance search.",
@@ -146,7 +146,7 @@ export const experience = [
     org: "TEKNOFEST Fighter UAV Team",
     href: "#project-teknofest",
     detail:
-      "One of **six members** in a multidisciplinary team building an autonomous fighter UAV. Responsible for **YOLO-based object detection** models and vision-based target detection and decision logic. The team **passed the technical qualification** stage.",
+      "One of **six members** in a multidisciplinary team building an autonomous fighter UAV. Responsible for **YOLO object detection** models and vision-based target detection and decision logic. The team **passed the technical qualification** stage.",
     tags: ["YOLO", "Object Detection", "Decision Logic"],
   },
   {
@@ -183,7 +183,6 @@ export const featuredProjects = [
     image: ["projects/quadra-cover-shot"],
     cover: { kind: "phones", shots: ["projects/quadra/combos", "projects/quadra/rotation", "projects/quadra/languages"] },
     appIcon: "quadra-cover",
-    links: [{ label: "Code", href: "https://github.com/barisalkan0/quadra-rotate" }],
     accent: "fuchsia",
   },
   {
@@ -193,7 +192,7 @@ export const featuredProjects = [
     year: "2026 – Present",
     highlight: { label: "Passed Technical Qualification", tone: "amber" },
     description:
-      "Autonomous fighter UAV built by a **6-member multidisciplinary team**. I develop the **YOLO-based object detection** models and the vision-based target detection and decision logic.",
+      "Autonomous fighter UAV built by a **6-member multidisciplinary team**. I develop the **YOLO object detection** models and the vision-based target detection and decision logic.",
     tags: ["YOLO", "Object Detection", "Autonomy"],
     image: ["projects/teknofest-uav", "media/uav-stock"],
     // Detection box drawn over the stock photo only (hidden once your own photo is added).
@@ -293,7 +292,7 @@ export const education = {
 };
 
 export const credentials = [
-  { title: "Certificate of Completion, AI Innovators Internship", issuer: "Microsoft Türkiye", year: "2026", logo: "microsoft" },
+  { title: "Certificate of Completion, AI Innovators Program", issuer: "Microsoft Türkiye", year: "2026", logo: "microsoft" },
   { title: "Object Oriented Programming Certificate", issuer: "Bilgeİş", year: "2025" },
   { title: "2nd Place, 23 April Tekirdağ Coding Competition", issuer: "High school category", year: "2021" },
 ];

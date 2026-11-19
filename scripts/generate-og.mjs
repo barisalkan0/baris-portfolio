@@ -59,17 +59,17 @@ const og = `
   <ellipse cx="600" cy="1590" rx="1500" ry="1000" fill="#020617" stroke="#a5f3fc" stroke-opacity="0.55" stroke-width="2"/>
 
   <g transform="translate(80 92)">
-    <rect width="286" height="38" rx="19" fill="#34d399" fill-opacity="0.08" stroke="#6ee7b7" stroke-opacity="0.3"/>
+    <rect width="348" height="38" rx="19" fill="#34d399" fill-opacity="0.08" stroke="#6ee7b7" stroke-opacity="0.3"/>
     <circle cx="22" cy="19" r="5" fill="#34d399"/>
-    <text x="38" y="25" font-size="17" fill="#d1fae5">Open to internships · AI &amp; CV</text>
+    <text x="38" y="25" font-size="17" fill="#d1fae5">Open to remote roles · AI &amp; software</text>
   </g>
   <text x="76" y="228" font-size="92" font-weight="700" fill="#ffffff" letter-spacing="-2">Barış Alkan</text>
   <text x="80" y="284" font-size="30" fill="#e2e8f0">Computer Engineering <tspan fill="#64748b">@</tspan> Middle East Technical University</text>
-  <text x="80" y="336" font-size="24" fill="#94a3b8">AI &amp; computer vision on UAVs, on-device and on the map</text>
+  <text x="80" y="336" font-size="24" fill="#94a3b8">AI applications, document assistants, image models and web platforms</text>
 
-  ${chip(80, "microsoft", "Microsoft Türkiye", "AI Innovators Intern · 2026")}
+  ${chip(80, "microsoft", "Microsoft Türkiye", "AI Innovators Program · 2026")}
   ${chip(400, "teknofest", "TEKNOFEST Fighter UAV", "Passed Technical Qualification")}
-  ${chip(720, "basarsoft", "Başarsoft", "Full-Stack GIS Intern · 2026")}
+  ${chip(720, "basarsoft", "Başarsoft", "Web GIS Intern · 2026")}
 
   <circle cx="1066" cy="112" r="64" fill="url(#avbg)"/>
   <image href="${photo}" x="998" y="44" width="136" height="153" clip-path="url(#av)" preserveAspectRatio="xMidYMin slice"/>

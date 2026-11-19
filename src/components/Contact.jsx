@@ -123,8 +123,8 @@ export default function Contact() {
           <div>
             <TerminalTitle />
             <p className="mt-4 max-w-xl leading-relaxed text-slate-300">
-              I'm open to internships in AI, computer vision and autonomous systems, and always happy to talk with teams
-              building ambitious hardware and software. Email or LinkedIn is the fastest way to reach me.
+              I'm open to part-time remote roles in AI and software engineering that I can continue during my master's,
+              starting in 2027. Email or LinkedIn is the fastest way to reach me.
             </p>
 
             <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
