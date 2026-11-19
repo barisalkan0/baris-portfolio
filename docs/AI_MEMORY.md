@@ -32,4 +32,4 @@
 
 **Security risk level:** low — static site; no auth, payments, user data, forms or API keys. Not verified by audit beyond this review.
 
-**2026-11-19 update:** Goal changed from IAC 2026 internships to a part-time remote role in AI/software that continues during a master's (from 2027). Microsoft AI Innovators is a training program: shown as "Program Participant", never "Intern". Site copy, meta tags, vCard and og.png updated to match the CV; CV PDF added to `public/`. Quadra Rotate code link removed (repo is private).
+**2026-11-19 update:** Goal changed from IAC 2026 internships to a part-time remote role in AI/software that continues during a master's (from 2027). Microsoft AI Innovators: certificate says "AI Innovators Internship Program", so shown as Intern. Site copy, meta tags, vCard and og.png updated to match the CV; CV PDF added to `public/`. Quadra Rotate code link removed (repo is private).

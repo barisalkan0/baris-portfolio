@@ -29,8 +29,8 @@ export const person = {
   university: "Middle East Technical University",
   campus: "NCC",
   school: "METU NCC",
-  status: "Open to remote roles",
-  statusDetail: "AI & software engineering, part time", // hidden on small phones
+  status: "Open to internships & remote roles",
+  statusDetail: "AI & software engineering", // hidden on small phones
   headline: "I build AI applications and the software around them: document assistants, image models and web platforms.",
   cardTitle: "AI · Computer Vision · Web",
   email: "alkan.baris@metu.edu.tr",
@@ -46,14 +46,14 @@ export const person = {
 // suffixes (%, +) are kept. Keep them in sync with the CV.
 export const heroStats = [
   { value: "93.31%", label: "CIFAR-10 test accuracy" },
-  { value: "8,700+", label: "places mapped in Ankara" },
+  { value: "2", label: "internships, summer 2026" },
   { value: "40+", label: "students helped as TA" },
   { value: "1", label: "game live on Google Play" },
 ];
 
 // The three facts a visitor should remember after ten seconds.
 export const proofs = [
-  { logo: "microsoft", label: "Microsoft Türkiye", detail: "AI Innovators Program · 2026", href: "#experience" },
+  { logo: "microsoft", label: "Microsoft Türkiye", detail: "AI Innovators Intern · 2026", href: "#experience" },
   { logo: "teknofest", label: "TEKNOFEST Fighter UAV", detail: "Passed Technical Qualification", href: "#project-teknofest" },
   { logo: "basarsoft", label: "Başarsoft", detail: "Web GIS Intern · 2026", href: "#experience" },
 ];
@@ -62,7 +62,7 @@ export const aboutTitle = "Real projects, measurable results.";
 
 export const about = [
   "I'm a fourth-year Computer Engineering student at **Middle East Technical University** (Northern Cyprus Campus). I like building software that leaves the classroom and gets used.",
-  "In summer 2026 I joined **Microsoft Türkiye's AI Innovators Program**, where I built a RAG assistant that runs **fully offline** on Microsoft Foundry Local. Right after, during my internship at **Başarsoft**, I built a **web GIS platform** on .NET 8 and PostGIS, loaded with **8,700+ real places** in Ankara.",
+  "In summer 2026 I completed **two back-to-back internships**. In **Microsoft Türkiye's AI Innovators Internship Program** I built a RAG assistant that runs **fully offline** on Microsoft Foundry Local. At **Başarsoft** I built a **web GIS platform** on .NET 8 and PostGIS, loaded with **8,700+ real places** in Ankara.",
   "On our **TEKNOFEST Fighter UAV** team I work on **YOLO target detection** and decision logic, and the team has **passed the technical qualification** stage. Separately, as a personal project, I trained a residual CNN that lifted CIFAR-10 accuracy from **78.43% to 93.31%**.",
   "I also shipped **Quadra Rotate** to Google Play and helped **40+ students** as a teaching assistant for Data Structures.",
 ];
@@ -127,10 +127,10 @@ export const experience = [
   {
     date: "Jul – Aug 2026",
     logo: "microsoft",
-    role: "Program Participant · AI Innovators Program",
+    role: "Intern · AI Innovators Internship Program",
     org: "Microsoft Türkiye",
-    meta: "Remote · Training program · Certificate of Completion",
-    detail: "Selected for Microsoft Türkiye's **AI Innovators Program** (Summer 2026).",
+    meta: "Remote · Certificate of Completion",
+    detail: "Selected for Microsoft Türkiye's **AI Innovators Internship Program** (Summer 2026).",
     points: [
       "Built a **local RAG assistant** that answers questions from your own documents, running **fully offline** with Microsoft Foundry Local.",
       "Implemented the pipeline end to end: document chunking, embeddings, SQLite storage and relevance search.",
@@ -292,7 +292,7 @@ export const education = {
 };
 
 export const credentials = [
-  { title: "Certificate of Completion, AI Innovators Program", issuer: "Microsoft Türkiye", year: "2026", logo: "microsoft" },
+  { title: "Certificate of Completion, AI Innovators Internship Program", issuer: "Microsoft Türkiye", year: "2026", logo: "microsoft" },
   { title: "Object Oriented Programming Certificate", issuer: "Bilgeİş", year: "2025" },
   { title: "2nd Place, 23 April Tekirdağ Coding Competition", issuer: "High school category", year: "2021" },
 ];

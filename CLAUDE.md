@@ -43,7 +43,7 @@ Page order: Hero → 01 Selected work (Quadra Rotate first) → 02 Experience �
 - Use the real company/organisation logos, never generic icons, for companies.
 - The CIFAR-10 CNN is a **personal project**. Never present it as related to the TEKNOFEST UAV work.
 - Write "Resume", not "Résumé".
-- Microsoft AI Innovators is a training program: write "Program Participant" / "AI Innovators Program", never "Intern".
+- Microsoft: the certificate says "AI Innovators Internship Program", so "Intern" is correct.
 - Commits must not credit Claude (no Co-Authored-By lines).
 - Don't invent facts, titles or numbers. Use only what is in his CV/LinkedIn; ask when unsure. On LinkedIn both internships are titled just "Intern".
 - CGPA and ranking are hidden on purpose.

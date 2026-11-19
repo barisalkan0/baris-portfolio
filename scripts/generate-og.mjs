@@ -61,13 +61,13 @@ const og = `
   <g transform="translate(80 92)">
     <rect width="348" height="38" rx="19" fill="#34d399" fill-opacity="0.08" stroke="#6ee7b7" stroke-opacity="0.3"/>
     <circle cx="22" cy="19" r="5" fill="#34d399"/>
-    <text x="38" y="25" font-size="17" fill="#d1fae5">Open to remote roles · AI &amp; software</text>
+    <text x="38" y="25" font-size="17" fill="#d1fae5">Open to internships &amp; remote roles</text>
   </g>
   <text x="76" y="228" font-size="92" font-weight="700" fill="#ffffff" letter-spacing="-2">Barış Alkan</text>
   <text x="80" y="284" font-size="30" fill="#e2e8f0">Computer Engineering <tspan fill="#64748b">@</tspan> Middle East Technical University</text>
   <text x="80" y="336" font-size="24" fill="#94a3b8">AI applications, document assistants, image models and web platforms</text>
 
-  ${chip(80, "microsoft", "Microsoft Türkiye", "AI Innovators Program · 2026")}
+  ${chip(80, "microsoft", "Microsoft Türkiye", "AI Innovators Intern · 2026")}
   ${chip(400, "teknofest", "TEKNOFEST Fighter UAV", "Passed Technical Qualification")}
   ${chip(720, "basarsoft", "Başarsoft", "Web GIS Intern · 2026")}
 
