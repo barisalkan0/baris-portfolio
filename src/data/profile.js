@@ -63,7 +63,7 @@ export const aboutTitle = "Real projects, measurable results.";
 export const about = [
   "I'm a fourth-year Computer Engineering student at **Middle East Technical University** (Northern Cyprus Campus). I like building software that leaves the classroom and gets used.",
   "In summer 2026 I completed **two back-to-back internships**. In **Microsoft Türkiye's AI Innovators Internship Program** I built a RAG assistant that runs **fully offline** on Microsoft Foundry Local. At **Başarsoft** I built a **web GIS platform** on .NET 8 and PostGIS, loaded with **8,700+ real places** in Ankara.",
-  "On our **TEKNOFEST Fighter UAV** team I work on **YOLO target detection** and decision logic, and the team has **passed the technical qualification** stage. Separately, as a personal project, I trained a residual CNN that lifted CIFAR-10 accuracy from **78.43% to 93.31%**.",
+  "On our **TEKNOFEST Fighter UAV** team I worked on **YOLO target detection** and decision logic, and the team **passed the technical qualification** stage. Separately, as a personal project, I trained a residual CNN that lifted CIFAR-10 accuracy from **78.43% to 93.31%**.",
   "I also shipped **Quadra Rotate** to Google Play and helped **40+ students** as a teaching assistant for Data Structures.",
 ];
 
@@ -140,13 +140,13 @@ export const experience = [
     link: { label: "Code", href: "https://github.com/barisalkan0/foundry-local-rag-assistant" },
   },
   {
-    date: "2026 – Present",
+    date: "2026",
     logo: "teknofest",
     role: "Computer Vision & Autonomy",
     org: "TEKNOFEST Fighter UAV Team",
     href: "#project-teknofest",
     detail:
-      "One of **six members** in a multidisciplinary team building an autonomous fighter UAV. Responsible for **YOLO object detection** models and vision-based target detection and decision logic. The team **passed the technical qualification** stage.",
+      "One of **six members** in a multidisciplinary team that built an autonomous fighter UAV. Developed the **YOLO object detection** models and vision-based target detection and decision logic. The team **passed the technical qualification** stage.",
     tags: ["YOLO", "Object Detection", "Decision Logic"],
   },
   {
@@ -189,10 +189,10 @@ export const featuredProjects = [
     id: "project-teknofest",
     title: "TEKNOFEST Fighter UAV",
     type: "Autonomous UAV · Computer Vision",
-    year: "2026 – Present",
+    year: "2026",
     highlight: { label: "Passed Technical Qualification", tone: "amber" },
     description:
-      "Autonomous fighter UAV built by a **6-member multidisciplinary team**. I develop the **YOLO object detection** models and the vision-based target detection and decision logic.",
+      "Autonomous fighter UAV built by a **6-member multidisciplinary team**. I developed the **YOLO object detection** models and the vision-based target detection and decision logic. The team passed the technical qualification stage.",
     tags: ["YOLO", "Object Detection", "Autonomy"],
     image: ["projects/teknofest-uav", "media/uav-stock"],
     // Detection box drawn over the stock photo only (hidden once your own photo is added).
